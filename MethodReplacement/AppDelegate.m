@@ -9,17 +9,24 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "BFAlienCellBackgroundView.h"
+#import "BFAlienCellBackgroundView+Hacking.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self replaceDrawingMethodBFAlienCell];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.viewController = [ViewController new];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)replaceDrawingMethodBFAlienCell{
+    [BFAlienCellBackgroundView injectNewDrawRectMethod];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

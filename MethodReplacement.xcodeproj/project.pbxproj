@@ -17,7 +17,8 @@
 		06CDBEE31665F284000AA5CC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06CDBEE21665F284000AA5CC /* Default@2x.png */; };
 		06CDBEE51665F284000AA5CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06CDBEE41665F284000AA5CC /* Default-568h@2x.png */; };
 		06CDBEE81665F284000AA5CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CDBEE71665F284000AA5CC /* ViewController.m */; };
-		06CDBEEB1665F284000AA5CC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06CDBEE91665F284000AA5CC /* ViewController.xib */; };
+		06CDBEF71665F32E000AA5CC /* BFAlienCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CDBEF61665F32E000AA5CC /* BFAlienCellBackgroundView.m */; };
+		06CDBEFA1665F3D2000AA5CC /* BFAlienCellBackgroundView+Hacking.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CDBEF91665F3D2000AA5CC /* BFAlienCellBackgroundView+Hacking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +37,10 @@
 		06CDBEE41665F284000AA5CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		06CDBEE61665F284000AA5CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		06CDBEE71665F284000AA5CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		06CDBEEA1665F284000AA5CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		06CDBEF51665F32E000AA5CC /* BFAlienCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFAlienCellBackgroundView.h; path = ../../BFAlienTableView/BFAlienTableView/BFAlienCellBackgroundView.h; sourceTree = "<group>"; };
+		06CDBEF61665F32E000AA5CC /* BFAlienCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFAlienCellBackgroundView.m; path = ../../BFAlienTableView/BFAlienTableView/BFAlienCellBackgroundView.m; sourceTree = "<group>"; };
+		06CDBEF81665F3D2000AA5CC /* BFAlienCellBackgroundView+Hacking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BFAlienCellBackgroundView+Hacking.h"; sourceTree = "<group>"; };
+		06CDBEF91665F3D2000AA5CC /* BFAlienCellBackgroundView+Hacking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BFAlienCellBackgroundView+Hacking.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,10 @@
 				06CDBEDE1665F284000AA5CC /* AppDelegate.m */,
 				06CDBEE61665F284000AA5CC /* ViewController.h */,
 				06CDBEE71665F284000AA5CC /* ViewController.m */,
-				06CDBEE91665F284000AA5CC /* ViewController.xib */,
+				06CDBEF51665F32E000AA5CC /* BFAlienCellBackgroundView.h */,
+				06CDBEF61665F32E000AA5CC /* BFAlienCellBackgroundView.m */,
+				06CDBEF81665F3D2000AA5CC /* BFAlienCellBackgroundView+Hacking.h */,
+				06CDBEF91665F3D2000AA5CC /* BFAlienCellBackgroundView+Hacking.m */,
 				06CDBED51665F284000AA5CC /* Supporting Files */,
 			);
 			path = MethodReplacement;
@@ -162,7 +169,6 @@
 				06CDBEE11665F284000AA5CC /* Default.png in Resources */,
 				06CDBEE31665F284000AA5CC /* Default@2x.png in Resources */,
 				06CDBEE51665F284000AA5CC /* Default-568h@2x.png in Resources */,
-				06CDBEEB1665F284000AA5CC /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +182,8 @@
 				06CDBEDB1665F284000AA5CC /* main.m in Sources */,
 				06CDBEDF1665F284000AA5CC /* AppDelegate.m in Sources */,
 				06CDBEE81665F284000AA5CC /* ViewController.m in Sources */,
+				06CDBEF71665F32E000AA5CC /* BFAlienCellBackgroundView.m in Sources */,
+				06CDBEFA1665F3D2000AA5CC /* BFAlienCellBackgroundView+Hacking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +196,6 @@
 				06CDBED81665F284000AA5CC /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		06CDBEE91665F284000AA5CC /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06CDBEEA1665F284000AA5CC /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
